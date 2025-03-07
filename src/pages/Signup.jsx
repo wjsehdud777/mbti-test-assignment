@@ -1,9 +1,9 @@
-import React from 'react'
-
-const Signup = () => {
+const SignUp = () => {
   return (
-    <div>Signup</div>
-  )
-}
+    <div>
+      <h1>회원가입을 해주세요!</h1>
+    </div>
+  );
+};
 
-export default Signup
+export default SignUp;
