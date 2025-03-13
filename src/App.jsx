@@ -11,7 +11,7 @@ const App = () => {
   const isAuthenticated = !!user;
 
   return (
-    <Layout isAuthenticated={isAuthenticated}>
+    <Layout isAuthenticated={isAuthenticated} setUser={setUser}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />
