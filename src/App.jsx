@@ -5,6 +5,7 @@ import SignUp from "./pages/Signup";
 import SignIn from "./pages/Signin";
 import Profile from "./pages/Profile";
 import Layout from "./components/Layout";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 const App = () => {
   const [user, setUser] = React.useState(null);
@@ -16,7 +17,9 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn setUser={setUser} />} />
-        <Route path="/profile" element={<Profile user={user} />} />
+        <Route element={<ProtectedRoute isAuthenticated={isAuthenticated} />}>
+          <Route path="/profile" element={<Profile user={user} />} />
+        </Route>
       </Routes>
     </Layout>
   );
