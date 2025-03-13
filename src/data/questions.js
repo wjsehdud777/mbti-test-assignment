@@ -103,13 +103,13 @@ export const questions = [
   },
   {
     id: 18,
-    question: "길을 가다가 튜터를 마주친다면?",
+    question: "길을 가다가 선생님을 마주친다면?",
     options: ["바로 아는척을 한다", "무서워서 집으로 뛴다"],
     type: "T/F",
   },
   {
     id: 19,
-    question: "튜터가 내 이름을 잘못부르면?",
+    question: "선생님이 내 이름을 잘못부르면?",
     options: ["그냥 넘어간다", "이름을 다시 말해준다"],
     type: "S/N",
   },
