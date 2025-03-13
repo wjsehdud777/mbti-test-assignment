@@ -8,9 +8,10 @@ import Layout from "./components/Layout";
 
 const App = () => {
   const [user, setUser] = React.useState(null);
+  const isAuthenticated = !!user;
 
   return (
-    <Layout>
+    <Layout isAuthenticated={isAuthenticated}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />
